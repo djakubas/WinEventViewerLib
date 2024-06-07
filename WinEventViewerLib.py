@@ -18,9 +18,11 @@ def Remove_Event_Source(source_name,log_type='Application'):
     except:
         return False
 
-def Get_Total_Logs(log_handle):
-    OpenEventLog(log_handle)
-    total= GetNumberOfEventLogRecords(log_handle)
+def Get_Total_Logs(server='localhost', log_type='Application'):
+    log_handle = OpenEventLog(server, log_type)
+    total = GetNumberOfEventLogRecords(log_handle)
+    CloseEventLog(log_handle)
+    return total
 
 def Get_Event_Logs(server='localhost', log_type='Application'):
     #Get events from WinEventViewer

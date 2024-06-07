@@ -27,3 +27,5 @@ if __name__ == "__main__":
     #Print latest Event
     if events:
         wlog.Print_Event(events[-1])
+
+    print(f'total logs: {wlog.Get_Total_Logs()}')
