@@ -17,5 +17,8 @@ Ensure your script has the necessary permissions to access the Windows Event Vie
 * Running scripts that interact with the Windows Event Viewer or registry may need to be executed with elevated permissions (Run as Administrator).
 * For detailed usage of pywin32, refer to the PyWin32 Documentation.
 
+# Security Warning
+When using WinEventViewerLib, be aware that many operations require administrative privileges, including accessing and modifying the Windows Registry. Registering and removing event sources involves registry modifications that can cause system instability, so always back up the registry first.
+
 
 
