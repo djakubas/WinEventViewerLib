@@ -2,6 +2,8 @@
 
 WinEventViewerLib is a Python library for interacting with the Windows Event Viewer, allowing users to retrieve event logs, write events to the log and manipulates registry event sources.
 
+Check [Project Wiki](https://github.com/djakubas/WinEventViewerLib/wiki) for more information
+
 # Prerequisites
 
 To use WinEventViewerLib, you need to have the pywin32 library installed. You can install it using pip:
