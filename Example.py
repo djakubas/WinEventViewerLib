@@ -1,4 +1,4 @@
-import WinEventViewerLib.WinEventViewerLib as wlog 
+import WinEventViewerLib as wlog 
 
 if __name__ == "__main__":
 
